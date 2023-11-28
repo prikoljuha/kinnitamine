@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tellimus on kinnitatud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="kinnitatud.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg cvet1">
+    <div class="container-fluid">
+        <img class="navbar-brand mx-auto" src="https://sun9-64.userapi.com/impg/f1rDv_9zQRyXSHuAmyAzexGZk0pOe8bJHlWRcQ/ouWhPUy6dQ0.jpg?size=716x126&quality=96&sign=f950c8824b2d88b8584d9ccca1cf9b47&type=album" height="70px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item nav-tekst">
+                    <a class="nav-link" aria-current="page" href="#">Kassi kostüümid</a>
+                </li>
+                <li class="nav-item nav-tekst">
+                    <a class="nav-link" aria-current="page" href="#">Koera kostüümid</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <button class="btn knopka" type="button" style="background-color: #BD52E3">
+                    <i class="bi bi-house"></i>
+                </button>
+                <button class="btn knopka" type="button" style="background-color: #BD52E3">
+                    <i class="bi bi-person"></i>
+                </button>
+                <button class="btn knopka" type="button" style="background-color: #BD52E3">
+                    <i class="bi bi-handbag"></i>
+                </button>
+                <button class="btn knopka" type="button" id="searchButton" style="background-color: #BD52E3">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div class="dropdown-menu dropdown-menu-end" id="menuContent" aria-labelledby="searchButton">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Leia sobiv toode" aria-label="Search">
+                    <button class="btn knopka" type="submit" style="background-color: #E6BBF6">
+                        Otsi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+(function () {
+  'use strict'
+
+  window.addEventListener('load', function () {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  }, false)
+}())
+</script>
+
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Tellimuse kinnitamine</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Ostukorv</span>
+            </h4>
+            <ul class="list-group mb-3 sticky-top">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Frankenpup</h6>
+                        <small class="text-muted">Kogus:1</small>
+                        <small class="text-muted">Suurus:S</small>
+                    </div>
+                    <span class="text-muted">70€</span>
+                </li>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Saatmine</h6>
+                        <small class="text-muted">Kojuvedu</small>
+                    </div>
+                    <span class="text-muted">5€</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Kokku</span>
+                    <strong>75€</strong>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Sisesta andmed</h4>
+            <form class="needs-validation" novalidate="">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">Eesnimi</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback"> Eesnimi on nõutav </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Perekonnanimi</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback"> Perekonnanimi on nõutav </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="username">User ID</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="Kasutajanimi" required="">
+                        <div class="invalid-feedback" style="width: 100%;"> Kasutajanimi on nõutav </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email <span class="text-muted"></span></label>
+                    <input type="email" class="form-control" id="email" placeholder="meow@example.com" required="">
+                    <div class="invalid-feedback"> Email on nõutav </div>
+                </div>
+                <div class="mb-3">
+                    <label for="address">Aadress</label>
+                    <input type="text" class="form-control" id="address" placeholder="Akadeemia tee 3" required="">
+                    <div class="invalid-feedback"> Aadress on nõutav </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="country">Riik</label>
+                        <select class="custom-select d-block w-100" id="country" required="">
+                            <option value="">Valige...</option>
+                            <option>Eesti</option>
+                        </select>
+                        <div class="invalid-feedback"> Riik on nõutav </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="state">Maakond</label>
+                        <select class="custom-select d-block w-100" id="state" required="">
+                            <option value="">Valige...</option>
+                            <option>Harju maakond</option>
+                            <option>Hiiu maakond</option>
+                            <option>Ida-Viru maakond</option>
+                            <option>Jõgeva maakond</option>
+                            <option>Järva maakond</option>
+                            <option>Lääne maakond</option>
+                            <option>Lääne-Viru maakond</option>
+                            <option>Põlva maakond</option>
+                            <option>Pärnu maakond</option>
+                            <option>Rapla maakond</option>
+                            <option>Saare maakond</option>
+                            <option>Tartu maakond</option>
+                            <option>Valga maakond</option>
+                            <option>Viljandi maakond</option>
+                            <option>Võru maakond</option>
+                        </select>
+                        <div class="invalid-feedback"> Maakond on nõutav </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="zip">Postiindeks</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                        <div class="invalid-feedback"> Postiindeks on nõutav </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <h4 class="mb-3">Makseviis</h4>
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                        <label class="custom-control-label" for="credit">Kaart</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="paypal">PayPal</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-name">Nimi kaardil</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                        <small class="text-muted">Täisnimi kaardil näidatud kujul</small>
+                        <div class="invalid-feedback"> Kaardil olev nimi on nõutav</div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number">Kaardi number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                        <div class="invalid-feedback"> Kaardi number on nõutav</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">Aegumine</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                        <div class="invalid-feedback"> Aegumine on nõutav </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-cvv">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                        <div class="invalid-feedback"> CVV on nõutav </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn knopka btn-lg btn-block" type="submit">Edasi</button>
+            </form>
+        </div>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+    </footer>
+</div>
+</body>
+
+</html>
