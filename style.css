@@ -1,5 +1,5 @@
 .cvet1{
-background-color: #ef8b15;
+background-color: #BD52E3;
 }
 .nav-tekst{
 font-size: 30px;
@@ -16,14 +16,14 @@ a{
     font-family: 'Bell MT', monospace;
 }
 .btn{
-    background-color: #ef8b15;
+    background-color: #BD52E3;
             color: black;
             padding: 10px 20px;
             border: none;
 }
 
 a:hover{
-    color: #ffb380 !important;
+    color: #cb99dd !important;
     text-decoration: none;
 }
 li{
@@ -32,7 +32,7 @@ li{
     vertical-align: 15px;
 }
 #menuContent{
-    background-color:#ef8b15;
+    background-color:#BD52E3;
     padding: 0px;
     width: 0px;
     position: static;
@@ -55,31 +55,9 @@ li{
     min-width: 400px;
 }
 .knopka:hover {
-    background-color: #ffb380 !important;
+    background-color: #cb99dd !important;
     border-color: #FFFFFF !important;
     color: #FFFFFF !important;
-}
-        .container {
-            width: 1000px;
-            height: 150px;
-            background-color: ##ef8b15;
-            border-radius: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-            padding: 50px;
-        }
-@media screen and (max-width: 767px) {
-  .container {
-    width: 100%;
-    height: 200px;
-    display: block;
-  }
-
-  .text {
-    font-size: 16px;
-  }
 }
 a{
     font-size: 40px;
@@ -90,7 +68,9 @@ a{
     font-family: 'Bell MT', monospace;
 }
 
-
+a:hover{
+    color: lavender;
+    text-decoration: none;
 }
 li{
     a: center;
@@ -105,86 +85,31 @@ li{
     left: 500px;
     top: 100px;
 }
-.gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .image-container {
-            width: 30%;
-            margin: 10px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .image {
-            max-width: 100%;
-            max-height: 400px;
-            display: block;
-            margin: 0 auto;
-            transition: transform 0.4s;
-        }
-
-        .image-container:hover .image, .image-container:hover .caption {
-            transform: scale(1.2);
-        }
-
-        .caption {
-            display: block;
-            margin: 5px 0;
-            font-size: 25px;
-            font-family: 'Bell MT', monospace;
-        }
-        .text {
-            color: black;
-            font-size: 30px;
-            font-family: 'Bell MT', monospace;
-        }
-}
-
-
-
-@media (max-width: 767px) {
-    .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .image-container {
-            width: 30%;
-            margin: 10px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .image {
-            max-width: 100%;
-            max-height: 400px;
-            display: block;
-            margin: 0 auto;
-            transition: transform 0.4s;
-        }
-
-        .image-container:hover .image, .image-container:hover .caption {
-            transform: scale(1.2);
-        }
-
-        .caption {
-            display: block;
-            margin: 5px 0;
-            font-size: 30px;
-            font-family: 'Bell MT', monospace;
-        }
-
-
-        .text {
-            color: black;
-            font-size: 5px;
-            font-family: 'Bell MT', monospace;
-        }
+.order-form .container {
+      color: #4c4c4c;
+      padding: 20px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+      max-width: 650px;
     }
-}
+
+    .order-form-label {
+      margin: 8px 0 0 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+.order-form-input,
+.form-label,
+.form-check-label {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+
+    }
+
+    .btn-submit:hover {
+      background-color: #0D47A1 !important;
+    }
+
+
+body{background-color: #F9E6FF;
+    font-family: 'Montserrat', sans-serif}.card{border:none}.logo{background-color: #eeeeeea8}.totals tr td{font-size: 13px}.footer{background-color: #eeeeeea8}.footer span{font-size: 12px}.product-qty span{font-size: 12px;color: #dedbdb}
